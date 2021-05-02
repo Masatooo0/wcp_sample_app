@@ -1,0 +1,8 @@
+<h1>詳細画面</h1>
+<h4>タイトル</h4>
+<p><%= @list.title %></p>
+<h4>本文</h4>
+<p><%= @list.body %></p>
+<h2>画像</h2>
+<%= attachment_image_tag @list, :image, format: 'jpeg', size: "300x300" %>
+<%= link_to "編集", edit_todolist_path(@list.id) %>
